@@ -1,0 +1,8 @@
+Mods: {
+    OreSlimes: {
+        NPCName: {
+            CopperSlime: Copper Slime
+            TinSlime: Tin Slime
+        }
+    }
+}
