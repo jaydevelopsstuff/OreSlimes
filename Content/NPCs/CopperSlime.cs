@@ -20,7 +20,7 @@ public class CopperSlime : ModNPC {
         AnimationType = 1;
         NPC.damage = 10;
         NPC.defense = 2;
-        NPC.lifeMax = 30;
+        NPC.lifeMax = 20;
         NPC.HitSound = new SoundStyle("OreSlimes/Assets/Sounds/NPCs/OreSlimeHit") with {
             PitchVariance = 0.1f
         };
