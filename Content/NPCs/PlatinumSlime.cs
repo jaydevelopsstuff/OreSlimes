@@ -25,7 +25,7 @@ public class PlatinumSlime : ModNPC {
         NPC.DeathSound = new SoundStyle("OreSlimes/Assets/Sounds/NPCs/OreSlimeKill") with {
             PitchVariance = 0.05f
         };
-        NPC.value = 25f;
+        NPC.value = 750f;
         NPC.lavaImmune = true; // Made of metal
     }
     
