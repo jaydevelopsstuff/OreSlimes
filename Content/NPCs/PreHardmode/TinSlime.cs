@@ -1,34 +1,17 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
+﻿using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.ModLoader.Utilities;
 
-namespace OreSlimes.Content.NPCs;
+namespace OreSlimes.Content.NPCs.PreHardmode;
 
 public class TinSlime : ModNPC {
-    public override void SetStaticDefaults() {
-        Main.npcFrameCount[NPC.type] = 2;
-    }
-    
     public override void SetDefaults() {
-        NPC.width = 36;
-        NPC.height = 36;
-        NPC.aiStyle = NPCAIStyleID.Slime;
-        AnimationType = 1;
         NPC.damage = 10;
         NPC.defense = 2;
         NPC.lifeMax = 20;
-        NPC.HitSound = new SoundStyle("OreSlimes/Assets/Sounds/NPCs/OreSlimeHit") with {
-            PitchVariance = 0.1f
-        };
-        NPC.DeathSound = new SoundStyle("OreSlimes/Assets/Sounds/NPCs/OreSlimeKill") with {
-            PitchVariance = 0.05f
-        };
         NPC.value = 150f;
-        NPC.lavaImmune = true; // Made of metal
     }
 
     public override void HitEffect(int hitDirection, double damage) {

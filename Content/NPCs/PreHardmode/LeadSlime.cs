@@ -4,29 +4,15 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace OreSlimes.Content.NPCs;
+namespace OreSlimes.Content.NPCs.PreHardmode;
 
 public class LeadSlime : ModNPC {
-    public override void SetStaticDefaults() {
-        Main.npcFrameCount[NPC.type] = 2;
-    }
-    
     public override void SetDefaults() {
-        NPC.width = 36;
-        NPC.height = 36;
-        NPC.aiStyle = NPCAIStyleID.Slime;
-        AnimationType = 1;
+        base.SetDefaults();
         NPC.damage = 15;
         NPC.defense = 4;
         NPC.lifeMax = 40;
-        NPC.HitSound = new SoundStyle("OreSlimes/Assets/Sounds/NPCs/OreSlimeHit") with {
-            PitchVariance = 0.1f
-        };
-        NPC.DeathSound = new SoundStyle("OreSlimes/Assets/Sounds/NPCs/OreSlimeKill") with {
-            PitchVariance = 0.05f
-        };
         NPC.value = 350f;
-        NPC.lavaImmune = true; // Made of metal
     }
     
     public override void HitEffect(int hitDirection, double damage) {
