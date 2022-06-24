@@ -21,7 +21,7 @@ public class CobaltSlime : OreSlime {
     }
 
     public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(new CommonDrop(ItemID.CobaltOre, 3, 1, 6, 4));
+        npcLoot.Add(new CommonDrop(ItemID.CobaltOre, 1, 2, 7));
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {

@@ -22,7 +22,7 @@ public class IronSlime : OreSlime {
     }
 
     public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(new CommonDrop(ItemID.IronOre, 3, 1, 5, 4));
+        npcLoot.Add(new CommonDrop(ItemID.IronOre, 1, 2, 7));
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {

@@ -22,7 +22,7 @@ public class TinSlime : OreSlime {
     }
 
     public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(new CommonDrop(ItemID.TinOre, 3, 1, 4, 4));
+        npcLoot.Add(new CommonDrop(ItemID.TinOre, 1, 2, 7));
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {

@@ -22,7 +22,7 @@ public class PlatinumSlime : OreSlime {
     }
 
     public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(new CommonDrop(ItemID.PlatinumOre, 3, 1, 6, 4));
+        npcLoot.Add(new CommonDrop(ItemID.PlatinumOre, 1, 2, 7));
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {

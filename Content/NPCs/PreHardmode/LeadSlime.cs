@@ -22,7 +22,7 @@ public class LeadSlime : OreSlime {
     }
 
     public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(new CommonDrop(ItemID.LeadOre, 3, 1, 5, 4));
+        npcLoot.Add(new CommonDrop(ItemID.LeadOre, 1, 2, 7));
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {

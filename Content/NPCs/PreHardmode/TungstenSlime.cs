@@ -22,7 +22,7 @@ public class TungstenSlime : OreSlime {
     }
 
     public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(new CommonDrop(ItemID.TungstenOre, 3, 1, 5, 4));
+        npcLoot.Add(new CommonDrop(ItemID.TungstenOre, 1, 2, 7));
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {
