@@ -6,13 +6,8 @@ using Terraria.ModLoader;
 
 namespace OreSlimes.Content.NPCs.PreHardmode;
 
-public class TungstenSlime : ModNPC {
-    public override void SetStaticDefaults() {
-        Main.npcFrameCount[NPC.type] = 2;
-    }
-    
+public class TungstenSlime : OreSlime {
     public override void SetDefaults() {
-        base.SetDefaults();
         NPC.damage = 15;
         NPC.defense = 4;
         NPC.lifeMax = 50;
