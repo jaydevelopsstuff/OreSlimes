@@ -12,6 +12,7 @@ public class TungstenSlime : ModNPC {
     }
     
     public override void SetDefaults() {
+        base.SetDefaults();
         NPC.damage = 15;
         NPC.defense = 4;
         NPC.lifeMax = 50;

@@ -6,10 +6,6 @@ using Terraria.ModLoader;
 namespace OreSlimes.Content.NPCs; 
 
 public class OreSlime : ModNPC {
-    public override void SetStaticDefaults() {
-        Main.npcFrameCount[NPC.type] = 2;
-    }
-
     public override void SetDefaults() {
         NPC.width = 36;
         NPC.height = 36;

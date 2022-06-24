@@ -7,7 +7,12 @@ using Terraria.ModLoader;
 namespace OreSlimes.Content.NPCs.PreHardmode;
 
 public class SilverSlime : ModNPC {
+    public override void SetStaticDefaults() {
+        Main.npcFrameCount[NPC.type] = 2;
+    }
+    
     public override void SetDefaults() {
+        base.SetDefaults();
         NPC.damage = 15;
         NPC.defense = 4;
         NPC.lifeMax = 50;

@@ -7,7 +7,12 @@ using Terraria.ModLoader;
 namespace OreSlimes.Content.NPCs.PreHardmode;
 
 public class TinSlime : ModNPC {
+    public override void SetStaticDefaults() {
+        Main.npcFrameCount[NPC.type] = 2;
+    }
+    
     public override void SetDefaults() {
+        base.SetDefaults();
         NPC.damage = 10;
         NPC.defense = 2;
         NPC.lifeMax = 20;

@@ -7,7 +7,12 @@ using Terraria.ModLoader;
 namespace OreSlimes.Content.NPCs.PreHardmode; 
 
 public class GoldSlime : OreSlime {
+    public override void SetStaticDefaults() {
+        Main.npcFrameCount[NPC.type] = 2;
+    }
+    
     public override void SetDefaults() {
+        base.SetDefaults();
         NPC.damage = 20;
         NPC.defense = 5;
         NPC.lifeMax = 50;

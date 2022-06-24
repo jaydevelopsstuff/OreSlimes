@@ -1,4 +1,4 @@
 displayName = Ore Slimes
 author = Jay
-version = 1.0.2
+version = 1.0.3
 homepage = https://discord.gg/hQJ4ArzCkg
