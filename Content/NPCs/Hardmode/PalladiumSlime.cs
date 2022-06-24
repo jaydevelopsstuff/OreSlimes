@@ -8,9 +8,9 @@ namespace OreSlimes.Content.NPCs.Hardmode;
 public class PalladiumSlime : OreSlime {
     public override void SetDefaults() {
         base.SetDefaults();
-        NPC.damage = 45;
-        NPC.defense = 8;
-        NPC.lifeMax = 90;
+        NPC.damage = 95;
+        NPC.defense = 10;
+        NPC.lifeMax = 130;
         NPC.value = 1000f;
     }
     
