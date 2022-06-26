@@ -26,7 +26,7 @@ public class PalladiumSlime : OreSlime {
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {
-        if(Main.hardMode && spawnInfo.Player.ZoneRockLayerHeight) return 0.04f * ModContent.GetInstance<OreSlimeConfig>().SpawnRateMultiplier;
+        if(Main.hardMode && spawnInfo.Player.ZoneRockLayerHeight) return 0.03f * ModContent.GetInstance<OreSlimeConfig>().SpawnRateMultiplier;
         return 0f;
     }
 }
