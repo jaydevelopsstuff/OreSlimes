@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using OreSlimes.Common.Configs;
+using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
@@ -26,7 +27,7 @@ public class GoldSlime : OreSlime {
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {
-        if(spawnInfo.Player.ZoneRockLayerHeight) return 0.04f;
+        if(spawnInfo.Player.ZoneRockLayerHeight) return 0.035f * ModContent.GetInstance<OreSlimeConfig>().SpawnRateMultiplier;
         return 0f;
     }
 }

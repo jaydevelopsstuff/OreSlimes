@@ -1,8 +1,12 @@
 Mods: {
     OreSlimes: {
-        NPCName: {
-            CopperSlime: Copper Slime
-            TinSlime: Tin Slime
+        Config: {
+            GeneralHeader: General
+            
+            SpawnRateMultiplier: {
+                Label: Spawn Rate Multiplier
+                Tooltip: Modifies the spawn rate of ore slimes, the lower, the less, the higher, the more.
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using OreSlimes.Common.Configs;
+using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -25,7 +26,7 @@ public class CobaltSlime : OreSlime {
     }
 
     public override float SpawnChance(NPCSpawnInfo spawnInfo) {
-        if(Main.hardMode && spawnInfo.Player.ZoneRockLayerHeight) return 0.04f;
+        if(Main.hardMode && spawnInfo.Player.ZoneRockLayerHeight) return 0.04f * ModContent.GetInstance<OreSlimeConfig>().SpawnRateMultiplier;
         return 0f;
     }
 }
